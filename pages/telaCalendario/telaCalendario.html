@@ -16,16 +16,17 @@
 
 <body>
   <nav class="navbar bg-black fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid container">
       <button class="navbar-toggler border border-0 botao" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mx-auto" href="#">
-        <img src="/img/Logo_kick.png" alt="Logo Kick" width="120" height="auto">
+        <img src="/img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
       </a>
       <ul class="nav justify-content-end align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
+          <a class="nav-link" href="/pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
+
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,9 +46,10 @@
         </li>
         <li class="nav-item d-flex align-items-center">
           <img src="/img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil">
-          <a class="nav-link t-perfil" href="#">Perfil</a>
+          <a class="nav-link t-perfil" href="/pages/telaPerfil/telaPerfil.html">Perfil</a>
         </li>
       </ul>
+
       <div class="offcanvas offcanvas-start text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <form class="d-flex" role="search">
@@ -58,13 +60,13 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Parada Tecnologia</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">Parada Tecnologia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Parada Socioemocional</a>
+              <a class="nav-link active" aria-current="page" href="/pages/telaSociemocional/telaSociemocional.html">Parada Socioemocional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Login</a>
+              <a class="nav-link active" aria-current="page" href="/pages/telaLogin/index.html">Sair</a>
             </li>
           </ul>
         </div>
@@ -72,93 +74,95 @@
     </div>
   </nav>
 
-  <div class="month-selector">
-    <button class="btn1">MÊS</button>
-  </div>
+  <main>
 
-  <div class="container-calendar d-flex mt-5 pt-5">
-    <div class="calendar">
-      <div class="calendar-header d-flex justify-content-between align-items-center">
-        <div class="calendar-header-left d-flex align-items-center">
-          <button class="btn2"><i class="fa-solid fa-chevron-left"></i>HOJE<i class="fa-solid fa-chevron-right"></i></button>
+    <div class="month-selector">
+      <button class="btn1">MÊS</button>
+    </div>
+    <div class="container-calendar d-flex mt-5 pt-5">
+      <div class="calendar">
+        <div class="calendar-header d-flex justify-content-between align-items-center">
+          <div class="calendar-header-left d-flex align-items-center">
+            <button class="btn2"><i class="fa-solid fa-chevron-left"></i>HOJE<i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="calendar-header-right d-flex align-items-center">
+            <button class="dropdown btn3">MAIO DE 2024 <i class="fa-solid fa-angle-down"></i></button>
+            <div class="underline"></div>
+          </div>
         </div>
-        <div class="calendar-header-right d-flex align-items-center">
-          <button class="dropdown btn3">MAIO DE 2024 <i class="fa-solid fa-angle-down"></i></button>
-          <div class="underline"></div>
+        <div class="days-of-week d-flex justify-content-around">
+          <span>Dom</span>
+          <span>Seg</span>
+          <span>Ter</span>
+          <span>Qua</span>
+          <span>Qui</span>
+          <span>Sex</span>
+          <span>Sáb</span>
+        </div>
+        <div class="calendar-grid">
+          <!-- Calendar days -->
+          <div class="calendar-day background-343C47"><span>28</span></div>
+          <div class="calendar-day background-343C47"><span>29</span></div>
+          <div class="calendar-day background-343C47"><span>30 ABR</span></div>
+          <div class="calendar-day background-343C47"><span>1 MAIO</span></div>
+          <div class="calendar-day background-343C47"><span>2</span></div>
+          <div class="calendar-day background-343C47"><span>3</span></div>
+          <div class="calendar-day background-343C47"><span>4</span></div>
+          <div class="calendar-day background-343C47"><span>5</span></div>
+          <div class="calendar-day background-343C47"><span>6</span></div>
+          <div class="calendar-day background-343C47 bordered"><span>7</span>
+            <div class="event">Socioemocional</div>
+          </div>
+          <div class="calendar-day background-343C47 bordered"><span>8</span>
+            <div class="event">Tecnologia</div>
+          </div>
+          <div class="calendar-day background-343C47"><span>9</span></div>
+          <div class="calendar-day background-343C47"><span>10</span></div>
+          <div class="calendar-day background-343C47"><span>11</span></div>
+          <div class="calendar-day background-343C47"><span>12</span></div>
+          <div class="calendar-day background-343C47"><span>13</span></div>
+          <div class="calendar-day background-343C47"><span>14</span></div>
+          <div class="calendar-day background-343C47"><span>15</span></div>
+          <div class="calendar-day background-343C47"><span>16</span></div>
+          <div class="calendar-day background-343C47"><span>17</span></div>
+          <div class="calendar-day background-343C47"><span>18</span></div>
+          <div class="calendar-day background-343C47"><span>19</span></div>
+          <div class="calendar-day background-343C47"><span>20</span></div>
+          <div class="calendar-day background-343C47"><span>21</span></div>
+          <div class="calendar-day background-343C47"><span>22</span></div>
+          <div class="calendar-day background-343C47"><span>23</span></div>
+          <div class="calendar-day background-343C47"><span>24</span></div>
+          <div class="calendar-day background-343C47"><span>25</span></div>
+          <div class="calendar-day background-343C47"><span>26</span></div>
+          <div class="calendar-day background-343C47"><span>27</span></div>
+          <div class="calendar-day background-343C47"><span>28</span></div>
+          <div class="calendar-day background-343C47"><span>29</span></div>
+          <div class="calendar-day background-343C47"><span>30</span></div>
+          <div class="calendar-day background-343C47"><span>31 MAIO</span></div>
+          <div class="calendar-day background-222427"><span>1 JUN</span></div>
+          <div class="calendar-day background-222427"><span>2</span></div>
+          <div class="calendar-day background-222427"><span>3</span></div>
+          <div class="calendar-day background-222427"><span>4</span></div>
+          <div class="calendar-day background-222427"><span>5</span></div>
+          <div class="calendar-day background-222427"><span>6</span></div>
+          <div class="calendar-day background-222427"><span>7</span></div>
+          <div class="calendar-day background-222427"><span>8</span></div>
+          <!-- Event Details -->
         </div>
       </div>
-      <div class="days-of-week d-flex justify-content-around">
-        <span>Dom</span>
-        <span>Seg</span>
-        <span>Ter</span>
-        <span>Qua</span>
-        <span>Qui</span>
-        <span>Sex</span>
-        <span>Sáb</span>
-      </div>
-      <div class="calendar-grid">
-        <!-- Calendar days -->
-        <div class="calendar-day background-343C47"><span>28</span></div>
-        <div class="calendar-day background-343C47"><span>29</span></div>
-        <div class="calendar-day background-343C47"><span>30 ABR</span></div>
-        <div class="calendar-day background-343C47"><span>1 MAIO</span></div>
-        <div class="calendar-day background-343C47"><span>2</span></div>
-        <div class="calendar-day background-343C47"><span>3</span></div>
-        <div class="calendar-day background-343C47"><span>4</span></div>
-        <div class="calendar-day background-343C47"><span>5</span></div>
-        <div class="calendar-day background-343C47"><span>6</span></div>
-        <div class="calendar-day background-343C47 bordered"><span>7</span>
-          <div class="event">Socioemocional</div>
+      <div class="profile d-flex flex-column justify-content-start ">
+        <div class="event-details">
+          <div class="event-header">
+            <h3>Terça-feira, 7 de maio</h3>
+          </div>
+          <div class="event-content">
+            <p class="p1">Emoções</p>
+            <p class="p2">7 DE MAIO, ÀS 18H30</p>
+          </div>
         </div>
-        <div class="calendar-day background-343C47 bordered"><span>8</span>
-          <div class="event">Tecnologia</div>
-        </div>
-        <div class="calendar-day background-343C47"><span>9</span></div>
-        <div class="calendar-day background-343C47"><span>10</span></div>
-        <div class="calendar-day background-343C47"><span>11</span></div>
-        <div class="calendar-day background-343C47"><span>12</span></div>
-        <div class="calendar-day background-343C47"><span>13</span></div>
-        <div class="calendar-day background-343C47"><span>14</span></div>
-        <div class="calendar-day background-343C47"><span>15</span></div>
-        <div class="calendar-day background-343C47"><span>16</span></div>
-        <div class="calendar-day background-343C47"><span>17</span></div>
-        <div class="calendar-day background-343C47"><span>18</span></div>
-        <div class="calendar-day background-343C47"><span>19</span></div>
-        <div class="calendar-day background-343C47"><span>20</span></div>
-        <div class="calendar-day background-343C47"><span>21</span></div>
-        <div class="calendar-day background-343C47"><span>22</span></div>
-        <div class="calendar-day background-343C47"><span>23</span></div>
-        <div class="calendar-day background-343C47"><span>24</span></div>
-        <div class="calendar-day background-343C47"><span>25</span></div>
-        <div class="calendar-day background-343C47"><span>26</span></div>
-        <div class="calendar-day background-343C47"><span>27</span></div>
-        <div class="calendar-day background-343C47"><span>28</span></div>
-        <div class="calendar-day background-343C47"><span>29</span></div>
-        <div class="calendar-day background-343C47"><span>30</span></div>
-        <div class="calendar-day background-343C47"><span>31 MAIO</span></div>
-        <div class="calendar-day background-222427"><span>1 JUN</span></div>
-        <div class="calendar-day background-222427"><span>2</span></div>
-        <div class="calendar-day background-222427"><span>3</span></div>
-        <div class="calendar-day background-222427"><span>4</span></div>
-        <div class="calendar-day background-222427"><span>5</span></div>
-        <div class="calendar-day background-222427"><span>6</span></div>
-        <div class="calendar-day background-222427"><span>7</span></div>
-        <div class="calendar-day background-222427"><span>8</span></div>
-        <!-- Event Details -->
       </div>
     </div>
-    <div class="profile d-flex flex-column justify-content-start ">
-      <div class="event-details">
-        <div class="event-header">
-          <h3>Terça-feira, 7 de maio</h3>
-        </div>
-        <div class="event-content">
-          <p class="p1">Emoções</p>
-          <p class="p2">7 DE MAIO, ÀS 18H30</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
   <script src="telaCalendario.js"></script>
 </body>
 
