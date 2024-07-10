@@ -1,0 +1,281 @@
+/* Reset e Estilos Globais */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Poppins', Inter, sans-serif;
+  color: #b5e2b5;
+}
+
+/* Estilos para Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.navbar-brand {
+  flex-grow: 1;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(105, 189, 151, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #69bd97;
+}
+
+.icon-calendar,
+.icon-bell {
+  font-size: 24px;
+  color: #69bd97;
+}
+
+.offcanvas .nav-link {
+  color: #ffffff;
+  font-family: Inter;
+}
+
+.offcanvas-body .nav-link.active {
+  color: #ffffff;
+}
+
+/* Estilos para Dropdown */
+.dropdown-menu {
+  background-color: #222427;
+  border-radius: none;
+  padding-top: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #dddddd;
+  font-family: Inter;
+}
+.alert-item {
+  background-color: #69bd97;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #333538;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #69bd97;
+}
+
+.alert-item {
+  text-align: center;
+}
+
+.badge {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  border-radius: 50%;
+  background-color: #69bd97;
+  color: white;
+  font-size: 8px;
+}
+.notification-item {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.notification-icon {
+  margin-right: 10px;
+}
+
+.custom-offcanvas {
+  width: 158px;
+  height: 258px;
+  max-height: 258px;
+}
+
+/* Estilos para Busca */
+.lupa {
+  color: #69bd97;
+  background-color: transparent;
+  border: none;
+}
+.lupa:hover {
+  background-color: transparent;
+  color: #69bd97;
+}
+.bg-busca::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-family: Inter;
+  align-items: center;
+}
+
+.bg-busca:focus,
+.bg-busca:active {
+  outline: none;
+  background-color: transparent;
+  box-shadow: 0 5px 10px -5px #69bd97;
+}
+
+.bg-busca {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+/* Estilos para Imagens */
+.rounded-circle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center 20%;
+}
+
+/* Estilos para Perfil */
+.t-perfil {
+  color: #69bd97;
+}
+
+.t-perfil:hover {
+  color: #69bd97;
+}
+
+/* Estilos para Conteúdo Principal */
+.titulo {
+  color: #69bd97;
+  text-align: left;
+  margin-bottom: 150px;
+}
+
+.conteudoTecnologia {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+
+.conteudo-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-family: Inter;
+}
+
+.conteudo-subtitulo {
+  border-left: 2px solid #69bd97;
+  padding: 20px;
+  color: #dddddd;
+  max-width: 600px;
+  text-align: left;
+}
+
+.conteudo-subtitulo p {
+  margin-bottom: 20px;
+}
+
+.conteudo-icone {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.conteudo-icone .icon {
+  color: #69bd97;
+  font-size: 24px;
+}
+
+/* Estilos para Rodapé */
+.rodape {
+  font-size: 10px;
+  margin: 20px 130px;
+}
+
+@media (max-width: 570px) {
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-toggler {
+    margin-top: 0;
+  }
+
+  .conteudoTecnologia {
+    padding: 10px;
+  }
+
+  .conteudo-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .conteudo-subtitulo {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .conteudo-icone {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .rodape {
+    margin: 10px;
+    font-size: 8px; /* Reduz o tamanho do rodapé */
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 1.3em; /* Reduz o tamanho do título */
+  }
+}

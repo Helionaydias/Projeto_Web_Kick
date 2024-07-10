@@ -1,0 +1,379 @@
+/* Reset e Estilos Globais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: 'Poppins', Inter, sans-serif;
+  color: #b5e2b5;
+}
+
+/* Estilos para Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.navbar-brand {
+  flex-grow: 1;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(105, 189, 151, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #69bd97;
+}
+
+.icon-calendar,
+.icon-bell {
+  font-size: 24px;
+  color: #69bd97;
+}
+
+.offcanvas .nav-link {
+  color: #ffffff;
+  font-family: Inter;
+}
+
+.offcanvas-body .nav-link.active {
+  color: #ffffff;
+}
+
+/* Estilos para Dropdown */
+.dropdown-menu {
+  background-color: #222427;
+  border-radius: none;
+  padding-top: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #dddddd;
+  font-family: Inter;
+}
+
+.alert-item {
+  background-color: #69bd97;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #333538;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #69bd97;
+}
+
+.alert-item {
+  text-align: center;
+}
+
+.badge {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  border-radius: 50%;
+  background-color: #69bd97;
+  color: white;
+  font-size: 8px;
+}
+
+.notification-item {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.notification-icon {
+  margin-right: 10px;
+}
+
+.custom-offcanvas {
+  width: 158px;
+  height: 258px;
+  max-height: 258px;
+}
+
+/* Estilos para Busca */
+.lupa {
+  color: #69bd97;
+  background-color: transparent;
+  border: none;
+}
+
+.bg-busca::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-family: Inter;
+}
+
+.bg-busca {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+/* Estilos para Imagens */
+.rounded-circle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center 20%;
+}
+
+/* Estilos para Perfil */
+.t-perfil {
+  color: #69bd97;
+}
+
+.t-perfil:hover {
+  color: #69bd97;
+}
+
+/* Estilos para o Seletor de Mês */
+.month-selector {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px; /* Ajuste conforme necessário */
+}
+
+.container-calendar {
+  display: flex;
+  margin-top: 20px; /* Ajuste conforme necessário */
+  font-family: 'Inter', sans-serif;
+  gap: 2px;
+  height: calc(100vh - 120px); /* Ajuste conforme necessário */
+}
+
+.calendar {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  flex: 1;
+  background-color: #343c47;
+  display: flex;
+  flex-direction: column;
+  margin-top: 66px;
+  margin-left: 2px;
+}
+
+.calendar-header-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.calendar-header-left .btn1 {
+  position: relative;
+}
+
+.calendar-header-left button:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2f59a5;
+}
+
+.calendar-header-left button {
+  background: none;
+  border: none;
+  color: #dddddd;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calendar-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-header-right .btn3 {
+  margin-left: 10px; /* Espaço entre o "HOJE" e "MAIO DE 2024" */
+  background: none;
+  border: none;
+  color: #dddddd;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-header-right .btn3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dddddd;
+}
+
+.days-of-week {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #dddddd;
+  font-size: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background-color: #000000;
+  height: 100%;
+}
+
+.calendar-day {
+  background-color: #343c47;
+  color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.background-222427 {
+  background-color: #222427;
+}
+
+.calendar-day span {
+  display: block;
+}
+
+.bordered {
+  border: 2px solid #2f59a5;
+}
+
+.event {
+  margin-top: 5px;
+  padding: 10px;
+  color: #69bd97;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.p1 {
+  color: #dddddd;
+  text-align: center;
+}
+
+.p2 {
+  text-align: center;
+}
+
+.event::before {
+  content: '•';
+  margin-right: 5px;
+}
+
+.event-details {
+  padding: 10px;
+}
+
+.event-header h3 {
+  margin: 20px 10px;
+  font-size: 18px;
+  color: #dddddd;
+  text-align: center;
+}
+
+.event-content {
+  background-color: #000000;
+  color: #69bd97;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .calendar-day {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+
+@media (max-width: 992px) {
+  .calendar-day {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-day {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+@media (max-width: 570px) {
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  .navbar-toggler {
+    margin-top: 0;
+  }
+
+  .container-calendar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile {
+    width: 100%;
+    margin-top: 2px;
+    height: auto;
+  }
+}
