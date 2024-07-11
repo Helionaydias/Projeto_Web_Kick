@@ -1,29 +1,29 @@
 <h1>ProjetoWeb Plataforma para educação Kick Figma </h1>
 
-![Paletas de cores](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/89a34790-48c2-45ff-98cc-c9c28ee6be87)
+![Paletas de cores](https://github.com/user-attachments/assets/4141b67d-a13a-45c9-9e62-3a7b4771d16e)
 
-![Ícones](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/95e0efc9-4925-4720-a363-0a5361b37a01)
+![Ícones](https://github.com/user-attachments/assets/15be783c-d63a-4403-b12d-15d6972579e9)
 
-![Tipografia](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/47171bd0-e2a2-400f-8780-35af838bf8fa)
+![Imagens](https://github.com/user-attachments/assets/7e573e56-8b17-4e09-90dd-0c7f75dc48d6)
 
-![Imagens](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/1d5aa5ac-753d-448f-87d6-894b06628bab)
+![Tipografia](https://github.com/user-attachments/assets/fda8513d-f719-41eb-9eaf-6dceb28c5608)
 
-![Login](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/06370c1b-06aa-49db-8ec6-e319bff94958)
+![Login](https://github.com/user-attachments/assets/378d5e67-f384-48ae-8e75-2c584481cd19)
 
-![Tecnologia](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/4d5e962d-fd41-4e0b-979f-5ec5ebd565f3)
+![Tecnologia](https://github.com/user-attachments/assets/b6c27ed1-c6e6-4537-803f-4d25c7714807)
 
-![Conteudo-Tecnologia](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/eff497c9-9a91-40c1-b49a-4fd002d1c792)
+![Conteudo-Tecnologia](https://github.com/user-attachments/assets/2a0c2ab2-6692-4a2b-8252-8e7ddf7857be)
 
-![Socoemocional](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/e395080d-53cf-4a5f-9dfe-cd1b8237ec1e)
+![Video-Tecnologia](https://github.com/user-attachments/assets/9cb67385-fb1c-42d7-8c0f-19f51ef6d793)
 
-![Conteudo-Socioemocional](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/cefacdf7-62cc-456d-813c-c8bda1187778)
+![Socoemocional](https://github.com/user-attachments/assets/baa86eae-8655-481a-bc65-fee2ecb32ee7)
 
-![Video-Tecnologia](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/37060be7-12b3-440b-842b-3638d65cf48b)
+![Conteudo-Socioemocional](https://github.com/user-attachments/assets/3f6b7842-05d0-463d-8396-a940a093d357)
 
-![Video-Socioemocional](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/aa5232c9-ab0d-46fc-8077-692e86981e6d)
+![Video-Socioemocional](https://github.com/user-attachments/assets/234d6a83-6130-4cd3-8da9-637101f13ab6)
 
-![Calendario](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/dfd59b28-ff84-4247-9410-2b291f970759)
+![Calendario](https://github.com/user-attachments/assets/052e5f04-37f1-46b3-ad64-f0066077eb9e)
 
-![Perfil](https://github.com/Helionaydias/ProjetoWeb-Kick/assets/101341807/5d249733-5fb8-433a-b4ad-4090b779f5fa)
+![Perfil](https://github.com/user-attachments/assets/90b69723-fd09-4a0f-9ef4-72aa706ab158)
 
-[Figma](https://www.figma.com/design/O8f2Ba5aSwjSyWDehHyVAB/Untitled?node-id=0-1&t=Bzm3QDdgmUfbDfVB-0)
+[Figma](https://www.figma.com/design/O8f2Ba5aSwjSyWDehHyVAB/Untitled?node-id=0-1&t=KTbwmpWtNenqxOiY-0)
