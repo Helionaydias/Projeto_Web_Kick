@@ -1,4 +1,3 @@
-/* Reset e Estilos Globais */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,19 +7,28 @@
 body {
   background-color: #222427;
   font-family: 'Inter', sans-serif;
-  color: #69bd97;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-nav.navbar {
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
-  padding: 10px 20px;
-  width: 100%;
 }
 
 .navbar-brand {
@@ -55,6 +63,7 @@ nav.navbar {
 
 .offcanvas .nav-link {
   color: #ffffff;
+  font-family: Inter;
 }
 
 .offcanvas-body .nav-link.active {
@@ -70,6 +79,7 @@ nav.navbar {
 
 .dropdown-menu .dropdown-item {
   color: #dddddd;
+  font-family: Inter;
 }
 
 .alert-item {
@@ -137,6 +147,8 @@ nav.navbar {
 .bg-busca::placeholder {
   color: #ffffff;
   opacity: 1;
+  font-family: Inter;
+  align-items: center;
 }
 
 .bg-busca:focus,
@@ -161,22 +173,34 @@ nav.navbar {
   object-position: center 20%;
 }
 
+/* Estilos para Perfil */
+.t-perfil {
+  color: #69bd97;
+}
+
+.t-perfil:hover {
+  color: #69bd97;
+}
+
 /* Estilos para Calendário */
 .container-calendar {
-  width: 100%;
-  padding: 20px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100vh;
 }
-
-.calendar-header h1 {
+.calendar-header {
+  display: flex;
   margin-left: 55px;
+  align-items: center;
+}
+.calendar-header h1 {
+  margin-top: 60px;
   display: inline-block;
   border-bottom: 1px solid #2f59a5;
   color: #69be97;
   font-size: 20px;
-  font-family: 'Inter', sans-serif;
 }
 
 .calendar-mes {
@@ -189,14 +213,9 @@ nav.navbar {
   font-size: 20px;
 }
 
-.arrow-left {
-  margin-left: 14.28%;
-}
-
 .hoje-container {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .hoje {
@@ -206,6 +225,7 @@ nav.navbar {
   color: #dddddd;
   cursor: pointer;
 }
+
 .hoje-container i {
   color: #ffffff;
 }
@@ -215,15 +235,17 @@ nav.navbar {
   text-align: center;
   position: relative;
 }
+
 .mes-ano i {
   color: #dddddd;
   margin-left: 50px;
 }
+
 .mes-ano-text {
   display: inline-block;
   border-bottom: 1px solid #dddddd;
   color: #dddddd;
-  padding-right: 20px; /* Extende o traço até o ícone */
+  padding-right: 20px;
 }
 
 .dropdown {
@@ -255,6 +277,7 @@ nav.navbar {
   padding: 10px 0;
   color: #2b2b2b;
 }
+
 .dropdown-header i {
   color: #2b2b2b;
 }
@@ -270,7 +293,7 @@ nav.navbar {
   padding: 10px 15px;
   text-decoration: none;
   text-align: center;
-  flex: 1 0 25%; /* Quatro meses por linha */
+  flex: 1 0 25%;
 }
 
 .dropdown-months a:hover {
@@ -291,10 +314,8 @@ nav.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   color: #dddddd;
   font-size: 20px;
-  font-family: 'Inter', sans-serif;
 }
 
 .month {
@@ -319,7 +340,7 @@ nav.navbar {
 
 .calendar-day {
   flex: 1 0 14.28%;
-  height: calc(100% / 6); /* Assumindo 6 semanas no mês */
+  height: calc(100% / 6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,146 +373,124 @@ nav.navbar {
   color: white;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .detalhe-video {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 992px) {
-  .detalhe-video {
-    padding: 10px;
+/* Estilos Responsivos */
+@media (max-width: 1400px) {
+  main {
+    align-items: center;
+    text-align: center;
   }
 
-  .conteudoVideo-tecnologia {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 980px) {
-  .detalhe-video {
-    padding: 10px;
-    margin: 0 20px;
+  .conteudo-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .my-video {
-    width: 100%;
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 799px) {
-  .detalhe-video {
-    padding: 10px;
-    margin: 0 10px;
+  .conteudo-subtitulo {
+    text-align: center;
+    padding: 0;
   }
 
-  .my-video {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .container-video {
-    flex-direction: row;
+  .conteudo-icone {
     justify-content: center;
-    align-items: flex-start;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 580px) {
   .navbar {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .navbar-brand {
-    flex-grow: 1;
+    margin: 0 auto;
     text-align: center;
   }
 
   .nav {
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }
 
   .nav-item {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
-  .conteudoVideo-tecnologia {
-    height: auto;
-    padding: 20px;
+  .navbar-toggler {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-brand {
+    margin: 0;
+    text-align: center;
   }
 
-  .rodape {
-    margin: 10px;
+  .nav {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 2px 0;
+  }
+
+  .icon-calendar,
+  .icon-bell {
+    font-size: 20px;
+  }
+
+  .rounded-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-link.t-perfil {
     font-size: 0.9em;
   }
 
-  .detalhe-video {
-    border-left: 2px solid #69bd97;
-    text-align: center;
-    margin: 0 10px;
-  }
-
-  .my-video {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .container-video {
-    flex-direction: row;
-    align-items: center;
+  .conteudo-icone .icon {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 576px) {
-  .detalhe-video {
-    padding: 10px;
-    margin: 0 10px;
+@media (max-width: 420px) {
+  .icon-calendar,
+  .icon-bell {
+    font-size: 18px;
   }
 
-  .my-video {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 480px) {
-  .detalhe-video {
-    padding: 5px;
-    margin: 0 5px;
+  .rounded-circle {
+    width: 25px;
+    height: 25px;
   }
 
-  .my-video {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .rodape {
-    margin: 5px;
+  .nav-link.t-perfil {
     font-size: 0.8em;
   }
+
+  .conteudo-icone .icon {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 470px) {
-  .navbar {
-    flex-wrap: nowrap;
+@media (max-width: 390px) {
+  .icon-calendar,
+  .icon-bell {
+    font-size: 16px;
   }
 
-  .navbar-brand {
-    flex-grow: 1;
-    text-align: center;
+  .rounded-circle {
+    width: 20px;
+    height: 20px;
   }
 
-  .nav {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  .nav-link.t-perfil {
+    font-size: 0.7em;
   }
 
-  .nav-item {
-    margin: 10px 0;
+  .conteudo-icone .icon {
+    font-size: 16px;
   }
 }

@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="telaCalendario.css">
+  <link rel="stylesheet" href="../../pages/telaCalendario/telaCalendario.css">
 </head>
 
 <body>
@@ -20,13 +20,12 @@
       <button class="navbar-toggler border border-0 botao" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mx-auto" href="#">
-        <img src="/img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
+      <a class="navbar-brand mx-auto" href="../../index.html">
+        <img src="../../img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
       </a>
       <ul class="nav justify-content-end align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="/pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
-
+          <a class="nav-link" href="../../pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,15 +37,15 @@
             <li><a class="dropdown-item alert-item" href="#">Alertas</a></li>
             <li>
               <a class="dropdown-item notification-item" href="#">
-                <img src="/img/speakers.svg" alt="" class="notification-icon">
+                <img src="../../img/speakers.svg" alt="" class="notification-icon">
                 <span class="notification-text">O desafio de<br>Tecnologia foi<br> avaliado.</span>
               </a>
             </li>
           </ul>
         </li>
         <li class="nav-item d-flex align-items-center">
-          <img src="/img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil">
-          <a class="nav-link t-perfil" href="/pages/telaPerfil/telaPerfil.html">Perfil</a>
+          <img src="../../img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil">
+          <a class="nav-link t-perfil" href="../../pages/telaPerfil/telaPerfil.html">Perfil</a>
         </li>
       </ul>
 
@@ -60,136 +59,120 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Parada Tecnologia</a>
+              <a class="nav-link active" aria-current="page" href="../../index.html">Parada Tecnologia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/pages/telaSociemocional/telaSociemocional.html">Parada Socioemocional</a>
+              <a class="nav-link active" aria-current="page" href="../../pages/telaSociemocional/telaSociemocional.html">Parada Socioemocional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/pages/telaLogin/index.html">Sair</a>
+              <a class="nav-link active" aria-current="page" href="../../pages/telaLogin/index.html">Sair</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-
-  <!DOCTYPE html>
-  <html lang="pt-br">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-    <nav class="navbar">
-      <!-- Conteúdo do navbar -->
-    </nav>
-    <main>
-      <section class="container-calendar">
-        <div class="calendar-header">
-          <h1>Mês</h1>
+  <main>
+    <section class="container-calendar">
+      <div class="calendar-header">
+        <h1>Mês</h1>
+      </div>
+      <div class="calendar-mes">
+        <div class="hoje-container">
+          <i class="fa-solid fa-angle-left"></i>
+          <div class="hoje">Hoje</div>
+          <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div class="calendar-mes">
-          <div class="hoje-container">
-            <i class="fa-solid fa-angle-left"></i>
-            <div class="hoje">Hoje</div>
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-          <div class="mes-ano">
-            <span class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <div class="dropdown-header">
-                  <i class="fa-solid fa-angle-left"></i> 2024 <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="dropdown-months">
-                  <a href="#">Jan</a>
-                  <a href="#">Fev</a>
-                  <a href="#">Mar</a>
-                  <a href="#">Apr</a>
-                  <a href="#">Maio</a>
-                  <a href="#">Jun</a>
-                  <a href="#">Jul</a>
-                  <a href="#">Ag</a>
-                  <a href="#">Set</a>
-                  <a href="#">Out</a>
-                  <a href="#">Nov</a>
-                  <a href="#">Dez</a>
-                </div>
+        <div class="mes-ano">
+          <span class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
+          <div class="dropdown">
+            <div class="dropdown-content">
+              <div class="dropdown-header">
+                <i class="fa-solid fa-angle-left"></i> 2024 <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="dropdown-months">
+                <a href="#">Jan</a>
+                <a href="#">Fev</a>
+                <a href="#">Mar</a>
+                <a href="#">Apr</a>
+                <a href="#">Maio</a>
+                <a href="#">Jun</a>
+                <a href="#">Jul</a>
+                <a href="#">Ag</a>
+                <a href="#">Set</a>
+                <a href="#">Out</a>
+                <a href="#">Nov</a>
+                <a href="#">Dez</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="calendar-month-wrapper">
-          <div class="calendar-month">
-            <div class="month">Dom</div>
-            <div class="month">Seg</div>
-            <div class="month">Ter</div>
-            <div class="month">Qua</div>
-            <div class="month">Qui</div>
-            <div class="month">Sex</div>
-            <div class="month">Sáb</div>
-          </div>
+      </div>
+      <div class="calendar-month-wrapper">
+        <div class="calendar-month">
+          <div class="month">Dom</div>
+          <div class="month">Seg</div>
+          <div class="month">Ter</div>
+          <div class="month">Qua</div>
+          <div class="month">Qui</div>
+          <div class="month">Sex</div>
+          <div class="month">Sáb</div>
         </div>
-        <div class="calendar-content">
-          <div class="container-calendar-day">
-            <div class="calendar-day">28</div>
-            <div class="calendar-day">29</div>
-            <div class="calendar-day">30</div>
-            <div class="calendar-day">1</div>
-            <div class="calendar-day">2</div>
-            <div class="calendar-day">3</div>
-            <div class="calendar-day">4</div>
-            <div class="calendar-day">5</div>
-            <div class="calendar-day">6</div>
-            <div class="calendar-day">7</div>
-            <div class="calendar-day">8</div>
-            <div class="calendar-day">9</div>
-            <div class="calendar-day">10</div>
-            <div class="calendar-day">11</div>
-            <div class="calendar-day">12</div>
-            <div class="calendar-day">13</div>
-            <div class="calendar-day">14</div>
-            <div class="calendar-day">15</div>
-            <div class="calendar-day">16</div>
-            <div class="calendar-day">17</div>
-            <div class="calendar-day">18</div>
-            <div class="calendar-day">19</div>
-            <div class="calendar-day">20</div>
-            <div class="calendar-day">21</div>
-            <div class="calendar-day">22</div>
-            <div class="calendar-day">23</div>
-            <div class="calendar-day">24</div>
-            <div class="calendar-day">25</div>
-            <div class="calendar-day">26</div>
-            <div class="calendar-day">27</div>
-            <div class="calendar-day">28</div>
-            <div class="calendar-day">29</div>
-            <div class="calendar-day">30</div>
-            <div class="calendar-day">31</div>
-            <div class="calendar-day next-month">1</div>
-            <div class="calendar-day next-month">2</div>
-            <div class="calendar-day next-month">3</div>
-            <div class="calendar-day next-month">4</div>
-            <div class="calendar-day next-month">5</div>
-            <div class="calendar-day next-month">6</div>
-            <div class="calendar-day next-month">7</div>
-            <div class="calendar-day next-month">8</div>
-          </div>
-          <div class="evento">
-            <p class="descricao-evento">Tarefas</p>
-            <p class="dia-evento">7 de maio</p>
-          </div>
+      </div>
+      <div class="calendar-content">
+        <div class="container-calendar-day">
+          <div class="calendar-day">28</div>
+          <div class="calendar-day">29</div>
+          <div class="calendar-day">30</div>
+          <div class="calendar-day">1</div>
+          <div class="calendar-day">2</div>
+          <div class="calendar-day">3</div>
+          <div class="calendar-day">4</div>
+          <div class="calendar-day">5</div>
+          <div class="calendar-day">6</div>
+          <div class="calendar-day">7</div>
+          <div class="calendar-day">8</div>
+          <div class="calendar-day">9</div>
+          <div class="calendar-day">10</div>
+          <div class="calendar-day">11</div>
+          <div class="calendar-day">12</div>
+          <div class="calendar-day">13</div>
+          <div class="calendar-day">14</div>
+          <div class="calendar-day">15</div>
+          <div class="calendar-day">16</div>
+          <div class="calendar-day">17</div>
+          <div class="calendar-day">18</div>
+          <div class="calendar-day">19</div>
+          <div class="calendar-day">20</div>
+          <div class="calendar-day">21</div>
+          <div class="calendar-day">22</div>
+          <div class="calendar-day">23</div>
+          <div class="calendar-day">24</div>
+          <div class="calendar-day">25</div>
+          <div class="calendar-day">26</div>
+          <div class="calendar-day">27</div>
+          <div class="calendar-day">28</div>
+          <div class="calendar-day">29</div>
+          <div class="calendar-day">30</div>
+          <div class="calendar-day">31</div>
+          <div class="calendar-day next-month">1</div>
+          <div class="calendar-day next-month">2</div>
+          <div class="calendar-day next-month">3</div>
+          <div class="calendar-day next-month">4</div>
+          <div class="calendar-day next-month">5</div>
+          <div class="calendar-day next-month">6</div>
+          <div class="calendar-day next-month">7</div>
+          <div class="calendar-day next-month">8</div>
         </div>
-      </section>
-    </main>
+        <div class="evento">
+          <p class="descricao-evento">Tarefas</p>
+          <p class="dia-evento">7 de maio</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="telaCalendario.js"></script>
-  </body>
+  <script src="telaCalendario.js"></script>
+</body>
 
-  </html>
+</html>
