@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnologia</title>
+  <title>Calendário</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -74,96 +74,122 @@
     </div>
   </nav>
 
-  <main>
+  <!DOCTYPE html>
+  <html lang="pt-br">
 
-    <div class="month-selector">
-      <button class="btn1">MÊS</button>
-    </div>
-    <div class="container-calendar d-flex mt-5 pt-5">
-      <div class="calendar">
-        <div class="calendar-header d-flex justify-content-between align-items-center">
-          <div class="calendar-header-left d-flex align-items-center">
-            <button class="btn2"><i class="fa-solid fa-chevron-left"></i>HOJE<i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-          <div class="calendar-header-right d-flex align-items-center">
-            <button class="dropdown btn3">MAIO DE 2024 <i class="fa-solid fa-angle-down"></i></button>
-            <div class="underline"></div>
-          </div>
-        </div>
-        <div class="days-of-week d-flex justify-content-around">
-          <span>Dom</span>
-          <span>Seg</span>
-          <span>Ter</span>
-          <span>Qua</span>
-          <span>Qui</span>
-          <span>Sex</span>
-          <span>Sáb</span>
-        </div>
-        <div class="calendar-grid">
-          <!-- Calendar days -->
-          <div class="calendar-day background-343C47"><span>28</span></div>
-          <div class="calendar-day background-343C47"><span>29</span></div>
-          <div class="calendar-day background-343C47"><span>30 ABR</span></div>
-          <div class="calendar-day background-343C47"><span>1 MAIO</span></div>
-          <div class="calendar-day background-343C47"><span>2</span></div>
-          <div class="calendar-day background-343C47"><span>3</span></div>
-          <div class="calendar-day background-343C47"><span>4</span></div>
-          <div class="calendar-day background-343C47"><span>5</span></div>
-          <div class="calendar-day background-343C47"><span>6</span></div>
-          <div class="calendar-day background-343C47 bordered"><span>7</span>
-            <div class="event">Socioemocional</div>
-          </div>
-          <div class="calendar-day background-343C47 bordered"><span>8</span>
-            <div class="event">Tecnologia</div>
-          </div>
-          <div class="calendar-day background-343C47"><span>9</span></div>
-          <div class="calendar-day background-343C47"><span>10</span></div>
-          <div class="calendar-day background-343C47"><span>11</span></div>
-          <div class="calendar-day background-343C47"><span>12</span></div>
-          <div class="calendar-day background-343C47"><span>13</span></div>
-          <div class="calendar-day background-343C47"><span>14</span></div>
-          <div class="calendar-day background-343C47"><span>15</span></div>
-          <div class="calendar-day background-343C47"><span>16</span></div>
-          <div class="calendar-day background-343C47"><span>17</span></div>
-          <div class="calendar-day background-343C47"><span>18</span></div>
-          <div class="calendar-day background-343C47"><span>19</span></div>
-          <div class="calendar-day background-343C47"><span>20</span></div>
-          <div class="calendar-day background-343C47"><span>21</span></div>
-          <div class="calendar-day background-343C47"><span>22</span></div>
-          <div class="calendar-day background-343C47"><span>23</span></div>
-          <div class="calendar-day background-343C47"><span>24</span></div>
-          <div class="calendar-day background-343C47"><span>25</span></div>
-          <div class="calendar-day background-343C47"><span>26</span></div>
-          <div class="calendar-day background-343C47"><span>27</span></div>
-          <div class="calendar-day background-343C47"><span>28</span></div>
-          <div class="calendar-day background-343C47"><span>29</span></div>
-          <div class="calendar-day background-343C47"><span>30</span></div>
-          <div class="calendar-day background-343C47"><span>31 MAIO</span></div>
-          <div class="calendar-day background-222427"><span>1 JUN</span></div>
-          <div class="calendar-day background-222427"><span>2</span></div>
-          <div class="calendar-day background-222427"><span>3</span></div>
-          <div class="calendar-day background-222427"><span>4</span></div>
-          <div class="calendar-day background-222427"><span>5</span></div>
-          <div class="calendar-day background-222427"><span>6</span></div>
-          <div class="calendar-day background-222427"><span>7</span></div>
-          <div class="calendar-day background-222427"><span>8</span></div>
-          <!-- Event Details -->
-        </div>
-      </div>
-      <div class="profile d-flex flex-column justify-content-start ">
-        <div class="event-details">
-          <div class="event-header">
-            <h3>Terça-feira, 7 de maio</h3>
-          </div>
-          <div class="event-content">
-            <p class="p1">Emoções</p>
-            <p class="p2">7 DE MAIO, ÀS 18H30</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="telaCalendario.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-</html>
+  <body>
+    <nav class="navbar">
+      <!-- Conteúdo do navbar -->
+    </nav>
+    <main>
+      <section class="container-calendar">
+        <div class="calendar-header">
+          <h1>Mês</h1>
+        </div>
+        <div class="calendar-mes">
+          <div class="hoje-container">
+            <i class="fa-solid fa-angle-left"></i>
+            <div class="hoje">Hoje</div>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="mes-ano">
+            <span class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div class="dropdown-header">
+                  <i class="fa-solid fa-angle-left"></i> 2024 <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="dropdown-months">
+                  <a href="#">Jan</a>
+                  <a href="#">Fev</a>
+                  <a href="#">Mar</a>
+                  <a href="#">Apr</a>
+                  <a href="#">Maio</a>
+                  <a href="#">Jun</a>
+                  <a href="#">Jul</a>
+                  <a href="#">Ag</a>
+                  <a href="#">Set</a>
+                  <a href="#">Out</a>
+                  <a href="#">Nov</a>
+                  <a href="#">Dez</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calendar-month-wrapper">
+          <div class="calendar-month">
+            <div class="month">Dom</div>
+            <div class="month">Seg</div>
+            <div class="month">Ter</div>
+            <div class="month">Qua</div>
+            <div class="month">Qui</div>
+            <div class="month">Sex</div>
+            <div class="month">Sáb</div>
+          </div>
+        </div>
+        <div class="calendar-content">
+          <div class="container-calendar-day">
+            <div class="calendar-day">28</div>
+            <div class="calendar-day">29</div>
+            <div class="calendar-day">30</div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day">5</div>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+            <div class="calendar-day">8</div>
+            <div class="calendar-day">9</div>
+            <div class="calendar-day">10</div>
+            <div class="calendar-day">11</div>
+            <div class="calendar-day">12</div>
+            <div class="calendar-day">13</div>
+            <div class="calendar-day">14</div>
+            <div class="calendar-day">15</div>
+            <div class="calendar-day">16</div>
+            <div class="calendar-day">17</div>
+            <div class="calendar-day">18</div>
+            <div class="calendar-day">19</div>
+            <div class="calendar-day">20</div>
+            <div class="calendar-day">21</div>
+            <div class="calendar-day">22</div>
+            <div class="calendar-day">23</div>
+            <div class="calendar-day">24</div>
+            <div class="calendar-day">25</div>
+            <div class="calendar-day">26</div>
+            <div class="calendar-day">27</div>
+            <div class="calendar-day">28</div>
+            <div class="calendar-day">29</div>
+            <div class="calendar-day">30</div>
+            <div class="calendar-day">31</div>
+            <div class="calendar-day next-month">1</div>
+            <div class="calendar-day next-month">2</div>
+            <div class="calendar-day next-month">3</div>
+            <div class="calendar-day next-month">4</div>
+            <div class="calendar-day next-month">5</div>
+            <div class="calendar-day next-month">6</div>
+            <div class="calendar-day next-month">7</div>
+            <div class="calendar-day next-month">8</div>
+          </div>
+          <div class="evento">
+            <p class="descricao-evento">Tarefas</p>
+            <p class="dia-evento">7 de maio</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="telaCalendario.js"></script>
+  </body>
+
+  </html>
