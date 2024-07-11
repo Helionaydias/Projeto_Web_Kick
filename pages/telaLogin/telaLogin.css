@@ -35,7 +35,7 @@ body {
 .row {
   display: flex;
 }
-*/ .item {
+.item {
   flex: 1;
   text-align: center;
 }
@@ -74,12 +74,14 @@ body {
 .btn {
   padding: 10px;
 }
+
 .rodape {
   margin-left: 130px;
   padding: 10px;
   color: var(--color-green);
   flex-wrap: wrap;
 }
+
 @media (max-width: 780px) {
   .container {
     flex-direction: column;
