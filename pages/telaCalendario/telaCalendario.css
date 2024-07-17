@@ -9,7 +9,7 @@ body {
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 main {
@@ -305,15 +305,13 @@ main {
 }
 
 .calendar-month-wrapper {
-  width: 100%;
+  width: 80%;
   background-color: #222427;
-  padding: 10px 0;
 }
 
 .calendar-month {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   color: #dddddd;
   font-size: 20px;
 }
@@ -339,10 +337,10 @@ main {
 }
 
 .calendar-day {
-  flex: 1 0 14.28%;
-  height: calc(100% / 6);
+  flex: 1 0 154px;
+  height: 133px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   border: 1px solid black;
   background-color: #343c47;
@@ -362,15 +360,37 @@ main {
   margin: 0;
 }
 
+.event-day {
+  display: flex;
+  align-items: center;
+  color: #69bd97;
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.event-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #69bd97;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
 .descricao-evento {
-  font-size: 1.2em;
+  color: #dddddd;
+  font-family: 'Inter', sans-serif;
+}
+
+.titulo-evento {
+  background-color: #69bd97;
+  color: #dddddd;
+  padding-top: 20px;
 }
 
 .dia-evento {
-  background-color: blueviolet;
   padding: 10px;
   border-radius: 5px;
-  color: white;
 }
 
 /* Estilos Responsivos */

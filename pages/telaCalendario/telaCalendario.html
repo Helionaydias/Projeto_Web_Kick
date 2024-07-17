@@ -80,12 +80,12 @@
       </div>
       <div class="calendar-mes">
         <div class="hoje-container">
-          <i class="fa-solid fa-angle-left"></i>
+          <i id="prev-month" class="fa-solid fa-angle-left"></i>
           <div class="hoje">Hoje</div>
-          <i class="fa-solid fa-angle-right"></i>
+          <i id="next-month" class="fa-solid fa-angle-right"></i>
         </div>
         <div class="mes-ano">
-          <span class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
+          <span id="mes-ano-text" class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
           <div class="dropdown">
             <div class="dropdown-content">
               <div class="dropdown-header">
@@ -95,11 +95,11 @@
                 <a href="#">Jan</a>
                 <a href="#">Fev</a>
                 <a href="#">Mar</a>
-                <a href="#">Apr</a>
-                <a href="#">Maio</a>
+                <a href="#">Abr</a>
+                <a href="#">Mai</a>
                 <a href="#">Jun</a>
                 <a href="#">Jul</a>
-                <a href="#">Ag</a>
+                <a href="#">Ago</a>
                 <a href="#">Set</a>
                 <a href="#">Out</a>
                 <a href="#">Nov</a>
@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="calendar-content">
-        <div class="container-calendar-day">
+        <div id="calendar-days" class="container-calendar-day">
           <div class="calendar-day">28</div>
           <div class="calendar-day">29</div>
           <div class="calendar-day">30</div>
@@ -131,8 +131,10 @@
           <div class="calendar-day">4</div>
           <div class="calendar-day">5</div>
           <div class="calendar-day">6</div>
-          <div class="calendar-day">7</div>
-          <div class="calendar-day">8</div>
+          <div class="calendar-day">7<div class="event-day"><span class="event-circle"></span>Socioemocional</div>
+          </div>
+          <div class="calendar-day">8<div class="event-day"><span class="event-circle"></span>Tecnologia</div>
+          </div>
           <div class="calendar-day">9</div>
           <div class="calendar-day">10</div>
           <div class="calendar-day">11</div>
@@ -166,14 +168,19 @@
           <div class="calendar-day next-month">8</div>
         </div>
         <div class="evento">
-          <p class="descricao-evento">Tarefas</p>
-          <p class="dia-evento">7 de maio</p>
+          <div>
+            <p class="descricao-evento">Terça-feira, 7 de maio</p>
+          </div>
+          <div class="titulo-evento">
+            <p class="título-evento"> Emoções </p>
+            <p class="dia-evento">7 DE MAIO, ÀS 18H30</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <script src="telaCalendario.js"></script>
+  <script src="../../pages/telaCalendario/telaCalendario.js"></script>
 </body>
 
 </html>
