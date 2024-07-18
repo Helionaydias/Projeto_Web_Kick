@@ -132,7 +132,6 @@ main {
   max-height: 258px;
 }
 
-/* Estilos para Busca */
 .lupa {
   color: #69bd97;
   background-color: transparent;
@@ -164,7 +163,6 @@ main {
   color: #ffffff;
 }
 
-/* Estilos para Imagens */
 .rounded-circle {
   width: 40px;
   height: 40px;
@@ -173,7 +171,6 @@ main {
   object-position: center 20%;
 }
 
-/* Estilos para Perfil */
 .t-perfil {
   color: #69bd97;
 }
@@ -182,7 +179,6 @@ main {
   color: #69bd97;
 }
 
-/* Estilos para Calendário */
 .container-calendar {
   width: 100vw;
   display: flex;
@@ -190,13 +186,15 @@ main {
   flex-grow: 1;
   height: 100vh;
 }
+
 .calendar-header {
   display: flex;
   margin-left: 55px;
   align-items: center;
 }
+
 .calendar-header h1 {
-  margin-top: 60px;
+  margin-top: 80px;
   display: inline-block;
   border-bottom: 1px solid #2f59a5;
   color: #69be97;
@@ -248,7 +246,7 @@ main {
   padding-right: 20px;
 }
 
-.dropdown {
+.calendar-dropdown {
   display: none;
   position: absolute;
   top: 100%;
@@ -263,13 +261,13 @@ main {
   color: #2b2b2b;
 }
 
-.dropdown-content {
+.calendar-dropdown-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.dropdown-header {
+.calendar-dropdown-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -278,17 +276,17 @@ main {
   color: #2b2b2b;
 }
 
-.dropdown-header i {
+.calendar-dropdown-header i {
   color: #2b2b2b;
 }
 
-.dropdown-months {
+.calendar-dropdown-months {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.dropdown-months a {
+.calendar-dropdown-months a {
   color: #222427;
   padding: 10px 15px;
   text-decoration: none;
@@ -296,11 +294,11 @@ main {
   flex: 1 0 25%;
 }
 
-.dropdown-months a:hover {
+.calendar-dropdown-months a:hover {
   background-color: #444;
 }
 
-.mes-ano:hover .dropdown {
+.mes-ano:hover .calendar-dropdown {
   display: block;
 }
 
@@ -337,14 +335,16 @@ main {
 }
 
 .calendar-day {
-  flex: 1 0 154px;
-  height: 133px;
+  flex: 1 0 14.28%;
+  height: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid black;
   background-color: #343c47;
   color: #dddddd;
+  padding: 5px;
 }
 
 .next-month {
@@ -391,126 +391,4 @@ main {
 .dia-evento {
   padding: 10px;
   border-radius: 5px;
-}
-
-/* Estilos Responsivos */
-@media (max-width: 1400px) {
-  main {
-    align-items: center;
-    text-align: center;
-  }
-
-  .conteudo-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .conteudo-subtitulo {
-    text-align: center;
-    padding: 0;
-  }
-
-  .conteudo-icone {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 580px) {
-  .navbar {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .navbar-brand {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .nav {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .nav-item {
-    margin: 5px 0;
-  }
-
-  .navbar-toggler {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 550px) {
-  .navbar-brand {
-    margin: 0;
-    text-align: center;
-  }
-
-  .nav {
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .nav-item {
-    margin: 2px 0;
-  }
-
-  .icon-calendar,
-  .icon-bell {
-    font-size: 20px;
-  }
-
-  .rounded-circle {
-    width: 30px;
-    height: 30px;
-  }
-
-  .nav-link.t-perfil {
-    font-size: 0.9em;
-  }
-
-  .conteudo-icone .icon {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 420px) {
-  .icon-calendar,
-  .icon-bell {
-    font-size: 18px;
-  }
-
-  .rounded-circle {
-    width: 25px;
-    height: 25px;
-  }
-
-  .nav-link.t-perfil {
-    font-size: 0.8em;
-  }
-
-  .conteudo-icone .icon {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 390px) {
-  .icon-calendar,
-  .icon-bell {
-    font-size: 16px;
-  }
-
-  .rounded-circle {
-    width: 20px;
-    height: 20px;
-  }
-
-  .nav-link.t-perfil {
-    font-size: 0.7em;
-  }
-
-  .conteudo-icone .icon {
-    font-size: 16px;
-  }
 }

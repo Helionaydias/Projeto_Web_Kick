@@ -17,16 +17,16 @@
 
 <body>
   <nav class="navbar bg-black fixed-top">
-    <div class="container-fluid container">
-      <button class="navbar-toggler border border-0 botao" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <div class="container-fluid">
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mx-auto" href="../../index.html">
-        <img src="../../img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
+        <img src="../../img/Logo_kick.png" alt="Logo Kick" width="100" height="auto">
       </a>
       <ul class="nav justify-content-end align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="../../pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
+          <a class="nav-link" href="#"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,10 +49,9 @@
           <a class="nav-link t-perfil" href="../../pages/telaPerfil/telaPerfil.html">Perfil</a>
         </li>
       </ul>
-
       <div class="offcanvas offcanvas-start text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <form class="d-flex" role="search">
+          <form class="d-flex search-container" role="search">
             <input class="form-control me-2 bg-busca" type="search" placeholder="Busca" aria-label="Search">
             <button class="btn btn-outline-success lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
@@ -86,12 +85,12 @@
         </div>
         <div class="mes-ano">
           <span id="mes-ano-text" class="mes-ano-text">MAIO DE 2024 <i class="fa-solid fa-chevron-down"></i></span>
-          <div class="dropdown">
-            <div class="dropdown-content">
-              <div class="dropdown-header">
+          <div class="calendar-dropdown">
+            <div class="calendar-dropdown-content">
+              <div class="calendar-dropdown-header">
                 <i class="fa-solid fa-angle-left"></i> 2024 <i class="fa-solid fa-angle-right"></i>
               </div>
-              <div class="dropdown-months">
+              <div class="calendar-dropdown-months">
                 <a href="#">Jan</a>
                 <a href="#">Fev</a>
                 <a href="#">Mar</a>
@@ -110,62 +109,64 @@
         </div>
       </div>
       <div class="calendar-month-wrapper">
-        <div class="calendar-month">
-          <div class="month">Dom</div>
-          <div class="month">Seg</div>
-          <div class="month">Ter</div>
-          <div class="month">Qua</div>
-          <div class="month">Qui</div>
-          <div class="month">Sex</div>
-          <div class="month">Sáb</div>
+        <div class="row text-center">
+          <div class="col">Dom</div>
+          <div class="col">Seg</div>
+          <div class="col">Ter</div>
+          <div class="col">Qua</div>
+          <div class="col">Qui</div>
+          <div class="col">Sex</div>
+          <div class="col">Sáb</div>
         </div>
       </div>
       <div class="calendar-content">
-        <div id="calendar-days" class="container-calendar-day">
-          <div class="calendar-day">28</div>
-          <div class="calendar-day">29</div>
-          <div class="calendar-day">30</div>
-          <div class="calendar-day">1</div>
-          <div class="calendar-day">2</div>
-          <div class="calendar-day">3</div>
-          <div class="calendar-day">4</div>
-          <div class="calendar-day">5</div>
-          <div class="calendar-day">6</div>
-          <div class="calendar-day">7<div class="event-day"><span class="event-circle"></span>Socioemocional</div>
+        <div id="calendar-days" class="container-calendar-day row row-cols-7 g-2">
+          <div class="col calendar-day">28</div>
+          <div class="col calendar-day">29</div>
+          <div class="col calendar-day">30</div>
+          <div class="col calendar-day">1</div>
+          <div class="col calendar-day">2</div>
+          <div class="col calendar-day">3</div>
+          <div class="col calendar-day">4</div>
+          <div class="col calendar-day">5</div>
+          <div class="col calendar-day">6</div>
+          <div class="col calendar-day">7
+            <div class="event-day"><span class="event-circle"></span>Socioemocional</div>
           </div>
-          <div class="calendar-day">8<div class="event-day"><span class="event-circle"></span>Tecnologia</div>
+          <div class="col calendar-day">8
+            <div class="event-day"><span class="event-circle"></span>Tecnologia</div>
           </div>
-          <div class="calendar-day">9</div>
-          <div class="calendar-day">10</div>
-          <div class="calendar-day">11</div>
-          <div class="calendar-day">12</div>
-          <div class="calendar-day">13</div>
-          <div class="calendar-day">14</div>
-          <div class="calendar-day">15</div>
-          <div class="calendar-day">16</div>
-          <div class="calendar-day">17</div>
-          <div class="calendar-day">18</div>
-          <div class="calendar-day">19</div>
-          <div class="calendar-day">20</div>
-          <div class="calendar-day">21</div>
-          <div class="calendar-day">22</div>
-          <div class="calendar-day">23</div>
-          <div class="calendar-day">24</div>
-          <div class="calendar-day">25</div>
-          <div class="calendar-day">26</div>
-          <div class="calendar-day">27</div>
-          <div class="calendar-day">28</div>
-          <div class="calendar-day">29</div>
-          <div class="calendar-day">30</div>
-          <div class="calendar-day">31</div>
-          <div class="calendar-day next-month">1</div>
-          <div class="calendar-day next-month">2</div>
-          <div class="calendar-day next-month">3</div>
-          <div class="calendar-day next-month">4</div>
-          <div class="calendar-day next-month">5</div>
-          <div class="calendar-day next-month">6</div>
-          <div class="calendar-day next-month">7</div>
-          <div class="calendar-day next-month">8</div>
+          <div class="col calendar-day">9</div>
+          <div class="col calendar-day">10</div>
+          <div class="col calendar-day">11</div>
+          <div class="col calendar-day">12</div>
+          <div class="col calendar-day">13</div>
+          <div class="col calendar-day">14</div>
+          <div class="col calendar-day">15</div>
+          <div class="col calendar-day">16</div>
+          <div class="col calendar-day">17</div>
+          <div class="col calendar-day">18</div>
+          <div class="col calendar-day">19</div>
+          <div class="col calendar-day">20</div>
+          <div class="col calendar-day">21</div>
+          <div class="col calendar-day">22</div>
+          <div class="col calendar-day">23</div>
+          <div class="col calendar-day">24</div>
+          <div class="col calendar-day">25</div>
+          <div class="col calendar-day">26</div>
+          <div class="col calendar-day">27</div>
+          <div class="col calendar-day">28</div>
+          <div class="col calendar-day">29</div>
+          <div class="col calendar-day">30</div>
+          <div class="col calendar-day">31</div>
+          <div class="col calendar-day next-month">1</div>
+          <div class="col calendar-day next-month">2</div>
+          <div class="col calendar-day next-month">3</div>
+          <div class="col calendar-day next-month">4</div>
+          <div class="col calendar-day next-month">5</div>
+          <div class="col calendar-day next-month">6</div>
+          <div class="col calendar-day next-month">7</div>
+          <div class="col calendar-day next-month">8</div>
         </div>
         <div class="evento">
           <div>
