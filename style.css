@@ -1,16 +1,13 @@
 /* Reset e Estilos Globais */
 * {
   box-sizing: border-box;
-}
-
-body,
-h1,
-p,
-a {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: black;
-  font-family: 'Poppins', Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Estilos para Navbar */
@@ -19,6 +16,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar-brand {
@@ -333,6 +331,12 @@ a {
     width: 100%;
     font-size: 18px;
   }
+  .titulo {
+    margin-top: 150px;
+  }
+  .rodape {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -369,18 +373,72 @@ a {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 364px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+  }
+
   .icon-calendar,
   .icon-bell {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .rounded-circle {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .nav-link.t-perfil {
-    font-size: 0.7em;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    margin-left: 5px;
+  }
+
+  .icon-calendar,
+  .icon-bell {
+    font-size: 18px;
+  }
+
+  .rounded-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-link.t-perfil {
+    font-size: 0.8em;
   }
 }

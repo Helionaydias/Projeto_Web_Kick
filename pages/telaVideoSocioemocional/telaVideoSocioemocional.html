@@ -35,13 +35,13 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-regular fa-bell icon-bell"></i>
-            <span class="badge">1</span>
+            <span class="badge" id="notification-badge">1</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="dropdown-arrow"></div>
             <li><a class="dropdown-item alert-item" href="#">Alertas</a></li>
             <li>
-              <a class="dropdown-item notification-item" href="#">
+              <a class="dropdown-item notification-item" href="#" id="new-notification">
                 <img src="../../img/speakers.svg" alt="" class="notification-icon">
                 <span class="notification-text">O desafio <br>Socioemocional foi<br> avaliado.</span>
               </a>
@@ -85,8 +85,12 @@
       </div>
       <div class="container-video">
         <div class="detalhe-video">
-          <video class="my-video" src="../../pages/telaVideoSocioemocional/video/videoSoc.mp4" controls muted loop poster="../../pages/telaVideoSocioemocional/video/videoSoc.mp4">
+          <video id="my-video" class="my-video" src="../../pages/telaVideoSocioemocional/video/videoSoc.mp4" controls muted loop poster="../../pages/telaVideoSocioemocional/video/videoSoc.mp4">
           </video>
+          <div class="video-controls">
+            <button id="play-button" class="btn btn-success">Play</button>
+            <button id="pause-button" class="btn btn-danger">Pause</button>
+          </div>
         </div>
       </div>
       <div class="seta-voltar-tec">
@@ -99,7 +103,32 @@
     <p>#kick 2024 – todos os direitos reservados | a nosso release</p>
   </footer>
 
-  <script src=""></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const notificationSound = new Audio('../../pages/telaVideoSocioemocional/media/notification_sound.mp3');
+      const notificationBadge = document.getElementById('notification-badge');
+      const newNotification = document.getElementById('new-notification');
+
+      newNotification.addEventListener('click', function () {
+        notificationSound.play();
+        let currentCount = parseInt(notificationBadge.textContent);
+        notificationBadge.textContent = currentCount + 1;
+      });
+
+      const video = document.getElementById('my-video');
+      const playButton = document.getElementById('play-button');
+      const pauseButton = document.getElementById('pause-button');
+
+      playButton.addEventListener('click', function () {
+        video.play();
+      });
+
+      pauseButton.addEventListener('click', function () {
+        video.pause();
+      });
+    });
+  </script>
+
 </body>
 
 </html>

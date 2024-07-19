@@ -17,14 +17,14 @@
 
 <body>
   <nav class="navbar bg-black fixed-top">
-    <div class="container-fluid container">
+    <div class="container-fluid">
       <button class="navbar-toggler border border-0 botao" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mx-auto" href="../../index.html">
+      <a class="navbar-brand mx-auto mx-md-0" href="../../index.html">
         <img src="../../img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
       </a>
-      <ul class="nav justify-content-end align-items-center">
+      <ul class="nav justify-content-end align-items-center flex-row">
         <li class="nav-item">
           <a class="nav-link" href="../../pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
         </li>
@@ -45,63 +45,81 @@
           </ul>
         </li>
         <li class="nav-item d-flex align-items-center">
-          <img src="../../img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil">
-          <a class="nav-link t-perfil" href="../../pages/telaPerfil/telaPerfil.html">Perfil</a>
+          <img src="../../img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil" id="navbarProfileImage">
+          <a class="nav-link t-perfil" href="../../pages/telaPerfil/telaPerfil.html" id="navbarUserName">Amanda Gonçalves</a>
         </li>
       </ul>
-
-      <div class="offcanvas offcanvas-start text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <form class="d-flex search-container" role="search">
-            <input class="form-control me-2 bg-busca" type="search" placeholder="Busca" aria-label="Search">
-            <button class="btn btn-outline-success lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">Parada Tecnologia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../pages/telaSociemocional/telaSociemocional.html">Parada Socioemocional</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../pages/telaLogin/index.html">Sair</a>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="offcanvas offcanvas-start text-bg-dark custom-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <form class="d-flex search-container" role="search">
+          <input class="form-control me-2 bg-busca" type="search" placeholder="Busca" aria-label="Search">
+          <button class="btn btn-outline-success lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../index.html">Parada Tecnologia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../pages/telaSociemocional/telaSociemocional.html">Parada Socioemocional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../../pages/telaLogin/index.html">Sair</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
-
   <main>
-    <div class="perfil-container">
-      <div class="profile-picture">
-        <img src="../../img/images.jpeg" alt="Foto de Perfil">
+    <div class="container perfil-container">
+      <div class="row">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <div class="profile-picture">
+            <img src="../../img/images.jpeg" alt="Foto de Perfil" id="profileImage">
+          </div>
+          <button class="alterar-foto" id="alterarFotoBtn">ALTERAR</button>
+          <input type="file" id="inputFoto" accept="image/*" class="inputFoto">
+        </div>
       </div>
-      <button class="alterar-foto">ALTERAR</button>
-      <h1>Amanda Gonçalves</h1>
-      <div class="change-password">
-        <h2>ALTERAR SENHA</h2>
-        <form>
-          <div class="form-group">
-            <div class="input-group">
-              <label for="new-password">ALTERAR SENHA</label>
-              <input type="password" id="new-password" name="new-password">
+      <div class="row">
+        <div class="col-12">
+          <form id="profileForm">
+            <div class="form-group row">
+              <div class="input-group col-md-6">
+                <label for="new-name">NOVO NOME</label>
+                <input type="text" id="new-name" name="new-name">
+              </div>
             </div>
-            <div class="input-group">
-              <label for="confirm-password">CONFIRMAR SENHA</label>
-              <input type="password" id="confirm-password" name="confirm-password">
+            <div class="form-group-button row">
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn-alterar-nome">ALTERAR NOME</button>
+              </div>
             </div>
-          </div>
-          <div class="form-group-button">
-            <button type="submit" class="btn-alterar-senha">ALTERAR SENHA</button>
-          </div>
-        </form>
+            <div class="form-group row">
+              <div class="input-group col-md-6">
+                <label for="new-password">ALTERAR SENHA</label>
+                <input type="password" id="new-password" name="new-password">
+              </div>
+              <div class="input-group col-md-6">
+                <label for="confirm-password">CONFIRMAR SENHA</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+              </div>
+            </div>
+            <div class="form-group-button row">
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn-alterar-senha">ALTERAR SENHA</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </main>
+
+  <script src="../../pages/telaPerfil/perfil.js"></script>
 </body>
 
 </html>

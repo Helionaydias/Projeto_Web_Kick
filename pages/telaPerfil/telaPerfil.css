@@ -17,6 +17,7 @@ body {
 
 /* Estilos para Navbar */
 .navbar {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,6 +74,7 @@ body {
   color: #dddddd;
   font-family: Inter;
 }
+
 .alert-item {
   background-color: #69bd97;
 }
@@ -92,10 +94,6 @@ body {
   border-bottom: 10px solid #69bd97;
 }
 
-.alert-item {
-  text-align: center;
-}
-
 .badge {
   position: absolute;
   right: 4px;
@@ -105,6 +103,7 @@ body {
   color: white;
   font-size: 8px;
 }
+
 .notification-item {
   color: white;
   display: flex;
@@ -128,10 +127,12 @@ body {
   background-color: transparent;
   border: none;
 }
+
 .lupa:hover {
   background-color: transparent;
   color: #69bd97;
 }
+
 .bg-busca::placeholder {
   color: #ffffff;
   opacity: 1;
@@ -178,11 +179,14 @@ body {
   text-align: center;
   width: 100%;
   padding-top: 100px;
+  height: 100vh;
 }
+
 .profile-picture {
   position: relative;
   margin-bottom: 20px;
 }
+
 .profile-picture img {
   object-fit: cover;
   width: 150px;
@@ -201,37 +205,29 @@ body {
   font-size: 12px;
   margin-bottom: 20px;
   font-size: 20px;
+  margin-bottom: 50px;
 }
-h1 {
-  font-size: 24px;
-  margin: 20px 0;
-  color: #69bd97;
-  letter-spacing: 2px;
-}
+
 .change-password,
-.preferences {
+.preferences,
+.change-name {
   width: 100%;
   margin-bottom: 40px;
-}
-h2 {
-  margin-bottom: 20px;
-  color: #343c47;
-  margin-bottom: 100px;
-  font-size: 20px;
 }
 .form-group {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   width: 100%;
   margin-bottom: 20px;
-  margin-right: 24px;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
+
 .input-group {
-  width: 45%;
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 .input-group label {
@@ -239,7 +235,8 @@ h2 {
   color: #dddddd;
 }
 
-.input-group input[type='password'] {
+.input-group input[type='password'],
+.input-group input[type='text'] {
   padding: 10px;
   border: none;
   border-bottom: 2px solid #aeafb0;
@@ -248,15 +245,20 @@ h2 {
   color: #aeafb0;
   transition: border-bottom 0.3s, box-shadow 0.3s;
 }
-.input-group input[type='password']:hover {
+
+.input-group input[type='password']:hover,
+.input-group input[type='text']:hover {
   border-bottom: 2px solid #69bd97;
   box-shadow: 0 5px 10px -5px #69bd97;
 }
+
 .form-group-button {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding-top: 20px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
 button {
@@ -267,9 +269,14 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 button:hover {
   border-bottom: 2px solid #2b2b2b;
   box-shadow: 0 5px 10px -5px #69bd97;
+}
+
+.inputFoto {
+  display: none;
 }
 
 @media (max-width: 570px) {
@@ -294,5 +301,11 @@ button:hover {
 
   .navbar-toggler {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-group {
+    flex-direction: row;
   }
 }
