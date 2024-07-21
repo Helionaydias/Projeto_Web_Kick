@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const video = document.getElementById('my-video');
-  const playButton = document.getElementById('play-button');
-  const pauseButton = document.getElementById('pause-button');
+  var video = document.getElementById('my-video');
+  var playButton = document.getElementById('play-button');
+  var pauseButton = document.getElementById('pause-button');
 
   playButton.addEventListener('click', function () {
-    video.play().catch((error) => {
-      console.error('Playback prevented: ', error);
-    });
+    video.play();
   });
 
   pauseButton.addEventListener('click', function () {
