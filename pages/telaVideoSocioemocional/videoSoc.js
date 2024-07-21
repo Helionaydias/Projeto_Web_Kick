@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var video = document.getElementById('my-video');
-  var playButton = document.getElementById('play-button');
-  var pauseButton = document.getElementById('pause-button');
+  const video = document.getElementById('my-video');
+  const playButton = document.getElementById('play-button');
+  const pauseButton = document.getElementById('pause-button');
 
   playButton.addEventListener('click', function () {
     video.play();
