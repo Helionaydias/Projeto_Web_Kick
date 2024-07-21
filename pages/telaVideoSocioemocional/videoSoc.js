@@ -3,11 +3,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const playButton = document.getElementById('play-button');
   const pauseButton = document.getElementById('pause-button');
 
-  playButton.addEventListener('click', function () {
-    video.play();
-  });
+  if (video && playButton && pauseButton) {
+    playButton.addEventListener('click', function () {
+      video.play();
+    });
 
-  pauseButton.addEventListener('click', function () {
-    video.pause();
-  });
+    pauseButton.addEventListener('click', function () {
+      video.pause();
+    });
+  } else {
+    console.error('Elementos de vídeo ou botões de controle não encontrados.');
+  }
 });
