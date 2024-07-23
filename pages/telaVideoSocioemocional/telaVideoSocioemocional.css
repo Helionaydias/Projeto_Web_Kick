@@ -210,6 +210,17 @@ body {
   height: auto;
 }
 
+.play_pause {
+  text-align: center;
+}
+.play_pause button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #69bd97;
+  color: #333538;
+}
+
 .seta-voltar-tec {
   margin-top: 20px;
 }
@@ -440,5 +451,36 @@ body {
 
   .nav-item {
     margin: 10px 0;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+  .rodape {
+    margin: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

@@ -88,28 +88,28 @@
           <div class="calendar-dropdown">
             <div class="calendar-dropdown-content">
               <div class="calendar-dropdown-header">
-                <i class="fa-solid fa-angle-left"></i> 2024 <i class="fa-solid fa-angle-right"></i>
+                <i id="prev-year" class="fa-solid fa-angle-left"></i> <span id="dropdown-year">2024</span> <i id="next-year" class="fa-solid fa-angle-right"></i>
               </div>
               <div class="calendar-dropdown-months">
-                <a href="#">Jan</a>
-                <a href="#">Fev</a>
-                <a href="#">Mar</a>
-                <a href="#">Abr</a>
-                <a href="#">Mai</a>
-                <a href="#">Jun</a>
-                <a href="#">Jul</a>
-                <a href="#">Ago</a>
-                <a href="#">Set</a>
-                <a href="#">Out</a>
-                <a href="#">Nov</a>
-                <a href="#">Dez</a>
+                <a href="#" data-month="0">Jan</a>
+                <a href="#" data-month="1">Fev</a>
+                <a href="#" data-month="2">Mar</a>
+                <a href="#" data-month="3">Abr</a>
+                <a href="#" data-month="4">Mai</a>
+                <a href="#" data-month="5">Jun</a>
+                <a href="#" data-month="6">Jul</a>
+                <a href="#" data-month="7">Ago</a>
+                <a href="#" data-month="8">Set</a>
+                <a href="#" data-month="9">Out</a>
+                <a href="#" data-month="10">Nov</a>
+                <a href="#" data-month="11">Dez</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="calendar-month-wrapper">
-        <div class="row text-center">
+        <div class="text-center calendar-days-header">
           <div class="col">Dom</div>
           <div class="col">Seg</div>
           <div class="col">Ter</div>
@@ -120,53 +120,8 @@
         </div>
       </div>
       <div class="calendar-content">
-        <div id="calendar-days" class="container-calendar-day row row-cols-7 g-2">
-          <div class="col calendar-day">28</div>
-          <div class="col calendar-day">29</div>
-          <div class="col calendar-day">30</div>
-          <div class="col calendar-day">1</div>
-          <div class="col calendar-day">2</div>
-          <div class="col calendar-day">3</div>
-          <div class="col calendar-day">4</div>
-          <div class="col calendar-day">5</div>
-          <div class="col calendar-day">6</div>
-          <div class="col calendar-day">7
-            <div class="event-day"><span class="event-circle"></span>Socioemocional</div>
-          </div>
-          <div class="col calendar-day">8
-            <div class="event-day"><span class="event-circle"></span>Tecnologia</div>
-          </div>
-          <div class="col calendar-day">9</div>
-          <div class="col calendar-day">10</div>
-          <div class="col calendar-day">11</div>
-          <div class="col calendar-day">12</div>
-          <div class="col calendar-day">13</div>
-          <div class="col calendar-day">14</div>
-          <div class="col calendar-day">15</div>
-          <div class="col calendar-day">16</div>
-          <div class="col calendar-day">17</div>
-          <div class="col calendar-day">18</div>
-          <div class="col calendar-day">19</div>
-          <div class="col calendar-day">20</div>
-          <div class="col calendar-day">21</div>
-          <div class="col calendar-day">22</div>
-          <div class="col calendar-day">23</div>
-          <div class="col calendar-day">24</div>
-          <div class="col calendar-day">25</div>
-          <div class="col calendar-day">26</div>
-          <div class="col calendar-day">27</div>
-          <div class="col calendar-day">28</div>
-          <div class="col calendar-day">29</div>
-          <div class="col calendar-day">30</div>
-          <div class="col calendar-day">31</div>
-          <div class="col calendar-day next-month">1</div>
-          <div class="col calendar-day next-month">2</div>
-          <div class="col calendar-day next-month">3</div>
-          <div class="col calendar-day next-month">4</div>
-          <div class="col calendar-day next-month">5</div>
-          <div class="col calendar-day next-month">6</div>
-          <div class="col calendar-day next-month">7</div>
-          <div class="col calendar-day next-month">8</div>
+        <div id="calendar-days" class="container-calendar-day row row-cols-7 ">
+          <!-- Dias do calendário -->
         </div>
         <div class="evento">
           <div>

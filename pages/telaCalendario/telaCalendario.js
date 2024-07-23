@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const monthTextElement = document.getElementById('mes-ano-text');
   const daysContainer = document.getElementById('calendar-days');
+  const dropdownYearElement = document.getElementById('dropdown-year');
 
   function renderCalendar(date) {
     const year = date.getFullYear();
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     monthTextElement.innerHTML = `${monthNames[
       month
     ].toUpperCase()} DE ${year} <i class="fa-solid fa-chevron-down"></i>`;
+    dropdownYearElement.textContent = year;
 
     // Limpar os dias atuais
     daysContainer.innerHTML = '';
@@ -35,14 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Dias do mês anterior
     for (let i = firstDayOfMonth; i > 0; i--) {
-      daysContainer.innerHTML += `<div class="calendar-day next-month">${
+      daysContainer.innerHTML += `<button class="calendar-day next-month" disabled>${
         lastDayOfPrevMonth - i + 1
-      }</div>`;
+      }</button>`;
     }
 
     // Dias do mês atual
     for (let i = 1; i <= lastDateOfMonth; i++) {
-      daysContainer.innerHTML += `<div class="calendar-day">${i}</div>`;
+      daysContainer.innerHTML += `<button class="calendar-day" data-day="${i}">${i}</button>`;
     }
 
     // Dias do próximo mês
@@ -50,8 +52,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextMonthDays = totalDays <= 35 ? 42 - totalDays : 49 - totalDays;
 
     for (let i = 1; i <= nextMonthDays; i++) {
-      daysContainer.innerHTML += `<div class="calendar-day next-month">${i}</div>`;
+      daysContainer.innerHTML += `<button class="calendar-day next-month" disabled>${i}</button>`;
     }
+
+    // Adicionar eventos aos botões dos dias
+    document.querySelectorAll('.calendar-day[data-day]').forEach((button) => {
+      button.addEventListener('click', function () {
+        alert(`Agendar evento para o dia ${this.getAttribute('data-day')}`);
+      });
+    });
   }
 
   document.getElementById('prev-month').addEventListener('click', function () {
@@ -62,6 +71,27 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('next-month').addEventListener('click', function () {
     currentDate.setMonth(currentDate.getMonth() + 1);
     renderCalendar(currentDate);
+  });
+
+  document.getElementById('prev-year').addEventListener('click', function () {
+    currentDate.setFullYear(currentDate.getFullYear() - 1);
+    renderCalendar(currentDate);
+  });
+
+  document.getElementById('next-year').addEventListener('click', function () {
+    currentDate.setFullYear(currentDate.getFullYear() + 1);
+    renderCalendar(currentDate);
+  });
+
+  // Adicionar evento para os meses do dropdown
+  const monthLinks = document.querySelectorAll('.calendar-dropdown-months a');
+  monthLinks.forEach((link) => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const month = parseInt(this.getAttribute('data-month'));
+      currentDate.setMonth(month);
+      renderCalendar(currentDate);
+    });
   });
 
   // Renderizar o calendário inicial
