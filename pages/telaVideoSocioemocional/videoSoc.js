@@ -1,6 +1,18 @@
 var myVideo = document.getElementById('video1');
+var isPlaying = false;
 
 function playPause() {
-  if (myVideo.paused) myVideo.play();
-  else myVideo.pause();
+  if (isPlaying) {
+    myVideo.pause();
+  } else {
+    myVideo.play();
+  }
 }
+
+myVideo.onplaying = function () {
+  isPlaying = true;
+};
+
+myVideo.onpause = function () {
+  isPlaying = false;
+};
