@@ -259,7 +259,7 @@ body {
     padding: 10px;
   }
 
-  .conteudoVideo-tecnologia {
+  .conteudoVideo-socioemocional {
     padding: 10px;
   }
 }
@@ -335,7 +335,7 @@ body {
     margin: 10px 0;
   }
 
-  .conteudoVideo-tecnologia {
+  .conteudoVideo-socioemocional {
     height: auto;
     padding: 20px;
   }
@@ -343,6 +343,7 @@ body {
   .titulo-video h1 {
     text-align: center;
     font-size: 1.2em;
+    text-transform: uppercase;
   }
 
   .seta-voltar-tec a {
@@ -439,5 +440,36 @@ body {
 
   .nav-item {
     margin: 10px 0;
+  }
+}
+@media (max-width: 450px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+  .rodape {
+    margin: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
