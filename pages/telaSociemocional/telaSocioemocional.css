@@ -1,17 +1,13 @@
 /* Reset e Estilos Globais */
 * {
   box-sizing: border-box;
-}
-
-body,
-h1,
-p,
-a {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: black;
-  font-family: 'Poppins', Inter, sans-serif;
-  color: #b5e2b5;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Estilos para Navbar */
@@ -20,6 +16,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar-brand {
@@ -222,60 +219,59 @@ a {
 .rodape {
   font-size: 10px;
   margin: 20px 130px;
+  color: #69bd97;
 }
 
-@media (max-width: 570px) {
-  .navbar {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+@media (max-width: 500px) {
+  .nav-items {
+    display: none !important;
   }
-
-  .navbar-brand {
-    margin: 0 auto;
-    text-align: center;
+  .offcanvas .nav-items {
+    display: block !important;
   }
-
-  .nav {
-    justify-content: space-between;
-    width: 100%;
+}
+@media (max-width: 503px) {
+  .nav-items {
+    display: none !important;
   }
-
-  .nav-item {
-    margin: 5px 0;
+  .offcanvas .nav-items {
+    display: block !important;
   }
-
-  .navbar-toggler {
-    margin-top: 0;
+}
+@media (min-width: 504px) {
+  .offcanvas .nav-items {
+    display: none !important;
   }
-
-  .conteudoTecnologia {
-    padding: 10px;
+}
+@media (max-width: 505px) {
+  .nav-items {
+    display: none !important;
   }
-
-  .conteudo-info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+  .offcanvas .nav-items {
+    display: block !important;
   }
-
-  .conteudo-subtitulo {
-    text-align: center;
-    padding: 10px;
+  .badge {
+    position: relative;
+    top: -10px;
+    right: 15px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: #69bd97;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+    line-height: 1;
   }
-
-  .conteudo-icone {
-    justify-content: center;
-    gap: 10px;
-  }
-
+}
+@media (max-width: 541px) {
   .rodape {
     margin: 10px;
-    font-size: 8px; /* Reduz o tamanho do rodapé */
-    text-align: center;
-  }
-
-  .titulo {
-    font-size: 1.3em; /* Reduz o tamanho do título */
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

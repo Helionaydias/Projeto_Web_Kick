@@ -8,7 +8,6 @@
 body {
   background-color: #222427;
   font-family: 'Inter', sans-serif;
-  color: #69bd97;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -20,6 +19,7 @@ body {
   justify-content: space-between;
   background-color: black;
   padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar-brand {
@@ -100,7 +100,7 @@ body {
   top: 2px;
   border-radius: 50%;
   background-color: #69bd97;
-  color: white;
+
   font-size: 8px;
 }
 
@@ -227,11 +227,62 @@ body {
 
 /* Estilos para Rodapé */
 .rodape {
-  font-size: 1em;
+  font-size: 10px;
   margin: 20px auto;
+  color: #69bd97;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4e846d black;
 }
 
 /* Responsividade */
+
+@media (max-width: 500px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (max-width: 503px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (min-width: 504px) {
+  .offcanvas .nav-items {
+    display: none !important;
+  }
+}
+
+@media (max-width: 505px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+  .badge {
+    position: relative;
+    top: -10px;
+    right: 15px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: #69bd97;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+    line-height: 1;
+  }
+}
 @media (max-width: 1200px) {
   .titulo-video h1 {
     font-size: 1.8em;

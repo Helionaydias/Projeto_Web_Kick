@@ -6,10 +6,10 @@
 
 body {
   background-color: #222427;
-  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar {
@@ -395,6 +395,49 @@ html {
 
   .calendar-day {
     height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (max-width: 503px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (min-width: 504px) {
+  .offcanvas .nav-items {
+    display: none !important;
+  }
+}
+@media (max-width: 505px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+  .badge {
+    position: relative;
+    top: -10px;
+    right: 15px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: #69bd97;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+    line-height: 1;
   }
 }
 

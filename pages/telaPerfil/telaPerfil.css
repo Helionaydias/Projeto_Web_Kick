@@ -279,6 +279,125 @@ button:hover {
   display: none;
 }
 
+@media (max-width: 320px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar,
+  .perfil-container,
+  .form-group,
+  .form-group-button,
+  .input-group {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-group {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-picture img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 460px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar,
+  .perfil-container,
+  .form-group,
+  .form-group-button,
+  .input-group {
+    width: 100%;
+    text-align: center;
+  }
+
+  .input-group {
+    width: 90%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (max-width: 503px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+}
+@media (min-width: 504px) {
+  .offcanvas .nav-items {
+    display: none !important;
+  }
+}
+
+@media (max-width: 505px) {
+  .nav-items {
+    display: none !important;
+  }
+  .offcanvas .nav-items {
+    display: block !important;
+  }
+  .badge {
+    position: relative;
+    top: -10px;
+    right: 15px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: #69bd97;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    height: auto;
+    width: auto;
+    line-height: 1;
+  }
+}
 @media (max-width: 570px) {
   .navbar {
     flex-wrap: nowrap;

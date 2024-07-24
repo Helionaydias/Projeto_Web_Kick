@@ -17,16 +17,16 @@
 
 <body>
   <nav class="navbar bg-black fixed-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <div class="container-fluid container">
+      <button class="navbar-toggler border border-0 botao" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand mx-auto" href="../../index.html">
-        <img src="../../img/Logo_kick.png" alt="Logo Kick" width="100" height="auto">
+        <img src="../../img/Logo_kick.png" mr="10" alt="Logo Kick" width="100" height="auto">
       </a>
-      <ul class="nav justify-content-end align-items-center">
+      <ul class="nav justify-content-end align-items-center nav-items">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
+          <a class="nav-link" href="../../pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,11 +67,36 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../../pages/telaLogin/index.html">Sair</a>
             </li>
+            <!-- Adicione aqui os itens de navegação extras para o menu offcanvas -->
+            <li class="nav-item nav-items">
+              <a class="nav-link" href="../../pages/telaCalendario/telaCalendario.html"><i class="fa-solid fa-calendar-days icon-calendar"></i> Calendário</a>
+            </li>
+            <li class="nav-item dropdown nav-items">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-bell icon-bell"></i>
+                <span class="badge">1</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-arrow"></div>
+                <li><a class="dropdown-item alert-item" href="#">Alertas</a></li>
+                <li>
+                  <a class="dropdown-item notification-item" href="#">
+                    <img src="../../img/speakers.svg" alt="" class="notification-icon">
+                    <span class="notification-text">O desafio de<br>Tecnologia foi<br> avaliado.</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-items d-flex align-items-center">
+              <img src="../../img/images.jpeg" class="rounded-circle me-2" alt="Imagem perfil">
+              <a class="nav-link t-perfil" href="../../pages/telaPerfil/telaPerfil.html">Perfil</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+
   <main>
     <section class="container-calendar">
       <div class="calendar-header">
